@@ -1,7 +1,7 @@
 Name:		lthor
 Summary:	Flashing tool for Tizen lunchbox
 Version:	1.4
-Release:	5
+Release:	6
 Group:		Development/Other
 License:	Apache
 URL:		https://download.tizendev.org/tools/lthor/
@@ -23,10 +23,10 @@ which is compatible with 'lthor'.
 
 %build
 %cmake
-%make
+%make_build
 
 %install
-%makeinstall_std -C build
+%make_install -C build
 
 %files
 #% dir %{_sysconfdir}/udev
